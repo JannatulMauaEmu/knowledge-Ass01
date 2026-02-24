@@ -491,7 +491,7 @@ button.btn-badge {
     flex-wrap: wrap;
 }
 .card {
-    background: #f9fafb; 
+    background: white; 
     border-radius: 12px; 
     padding: 24px 20px; 
     width: 200px; 
