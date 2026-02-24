@@ -1,0 +1,155 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+}
+
+body { 
+    font-family: 'Segoe UI', Arial, sans-serif; 
+    color: black;
+    background-color: #000; 
+}
+
+/* BUTTONS */
+.btn-primary { 
+    background: #4caf50; 
+    color: #fff; 
+    border: none; 
+    padding: 12px 24px; 
+    border-radius: 8px; 
+    font-size: 14px; 
+    font-weight: 600; 
+    cursor: pointer; 
+    display: inline-flex; 
+    align-items: center; 
+    gap: 8px; 
+}
+.btn-primary:hover {
+    background: #43a047; 
+}
+.btn-primary img { 
+    width: 14px; 
+}
+.btn-outline {
+    background: transparent; 
+    color: white; 
+    border: 1.5px solid rgba(255,255,255,0.55); 
+    padding: 12px 24px; 
+    border-radius: 8px; 
+    font-size: 14px; 
+    font-weight: 600; 
+    cursor: pointer; 
+}
+.btn-outline:hover {
+    border-color: white; 
+}
+.btn-badge { 
+    background: rgba(255,255,255,0.12); 
+    color:white; 
+    border: 1px solid rgba(255,255,255,0.3); 
+    padding: 5px 18px; 
+    border-radius: 20px; 
+    font-size: 12px; 
+    cursor: default; 
+    margin-bottom: 20px; 
+}
+
+/* NAVBAR */
+.headnav { 
+    background: white; 
+    padding: 14px 40px; 
+    position: sticky; 
+    top: 0; 
+    z-index: 100; 
+    box-shadow: 0 2px 8px rgba(0,0,0,0.07); 
+}
+.headnav nav { 
+    display: flex; 
+    align-items: center; 
+    justify-content: space-between; 
+    max-width: 1100px; 
+    margin: 0 auto; 
+}
+.headnav nav img { 
+    height: 36px; 
+}
+.headnav ul { 
+    list-style: none; 
+    display: flex; 
+    gap: 32px; 
+}
+.headnav ul a { 
+    text-decoration: none; 
+    color: #333; 
+    font-size: 14px; 
+    font-weight: 500; 
+}
+.headnav ul a:hover { 
+    color: #4caf50; 
+}
+
+/* HERO */
+header { 
+    position: relative; 
+    text-align: center; 
+    padding: 80px 20px 90px; 
+    background: url('images/hero-bg.png') no-repeat center center/cover; 
+    color: #fff; 
+    overflow: hidden; 
+}
+header .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.4); 
+    z-index: 1;
+}
+header h1, header h2, header p {
+    position: relative;
+    z-index: 2;
+}
+header h1 { 
+    font-size: 40px; 
+    font-weight: 700; 
+    margin-bottom: 4px; 
+}
+header h2 { 
+    font-size: 40px; 
+    font-weight: 700; 
+    color: #a8e063; 
+    margin-bottom: 16px; 
+}
+header p { 
+    font-size: 15px; 
+    color: rgba(255,255,255,0.8); 
+    line-height: 1.5; 
+}
+.hero-btns { 
+    margin-top: 28px; 
+    display: flex; 
+    justify-content: center; 
+    gap: 12px; 
+    flex-wrap: wrap; 
+}
+
+header .hero-btns {
+    position: relative;
+    z-index: 2;
+}
+
+button.btn-badge {
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #4caf50;
+    color: white;
+    border-radius: 50px;
+    padding: 8px 20px;
+    font-size: 14px;
+    cursor: pointer;
+    z-index: 3; 
+}
